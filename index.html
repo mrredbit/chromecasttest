@@ -20,7 +20,7 @@
     </script> -->
     <style type="text/css" media="screen">
     body {
-    padding: 20px 0;
+    padding: 20px 20px;
     }
     .no-gutters {
     margin-right: 0;
@@ -38,14 +38,6 @@
     padding-left: 2px !important;
     padding-right: 2px !important;
     }
-    .left-panel {
-      flex: 0 0 20%;
-      max-width: 20%
-    }
-
-    .right-panel {
-      flex: 0 0 80%;
-    }
     </style>
   </head>
   <body style="backgroud-color: white">
@@ -60,9 +52,8 @@
     window.setTimeout = function(a, b) {};
     </script>
     <div class="container-fluid">
-      <div class="row no-gutters">
-        <div class="col-2 left-panel">
-          
+      <div class="row">
+        <div class="col-4">
           <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
           {
           "symbol": "NASDAQ:GOOGL",
@@ -119,187 +110,154 @@
           "largeChartUrl": ""
           }
           </script>
-          
         </div>
-        <div class="col-10 row no-gutters right-panel">
+        <div class="col-8 row no-gutters">
           <div class="row no-gutters">
-            <div class="col-6 row no-gutters">
-              <div class="col-12">
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
-                {
-                "symbol": "NASDAQ:FB",
-                "width": "100%",
-                "locale": "en",
-                "colorTheme": "light",
-                "isTransparent": false
-                }
-                </script>
-              </div>
-              <div class="col-6">
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                {
-                "symbol": "NASDAQ:PYPL",
-                "width": "100%",
-                "colorTheme": "light",
-                "isTransparent": false,
-                "locale": "en"
-                }
-                </script>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                {
-                "symbol": "NASDAQ:NFLX",
-                "width": "100%",
-                "colorTheme": "light",
-                "isTransparent": false,
-                "locale": "en"
-                }
-                </script>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                {
-                "symbol": "NYSE:SYK",
-                "width": "100%",
-                "colorTheme": "light",
-                "isTransparent": false,
-                "locale": "en"
-                }
-                </script>
-              </div>
-              <div class="col-6">
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                {
-                "symbol": "NASDAQ:ETSY",
-                "width": "100%",
-                "colorTheme": "light",
-                "isTransparent": false,
-                "locale": "en"
-                }
-                </script>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                {
-                "symbol": "NYSE:SHOP",
-                "width": "100%",
-                "colorTheme": "light",
-                "isTransparent": false,
-                "locale": "en"
-                }
-                </script>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                {
-                "symbol": "NYSE:SPOT",
-                "width": "100%",
-                "colorTheme": "light",
-                "isTransparent": false,
-                "locale": "en"
-                }
-                </script>
-                
-              </div>
-              </div>
-              <div class="col-6 row no-gutters">
-                <div class="col-6">
-                  
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NASDAQ:PYPL",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NYSE:ZBH",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NASDAQ:GOOGL",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NASDAQ:TSLA",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NYSE:JNJ",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                  
-                </div>
-                <div class="col-6">
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NASDAQ:BKNG",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NASDAQ:EXPE",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NASDAQ:ZM",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NASDAQ:AAPL",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                  {
-                  "symbol": "NYSE:DIS",
-                  "width": "100%",
-                  "colorTheme": "light",
-                  "isTransparent": false,
-                  "locale": "en"
-                  }
-                  </script>
-                </div>
-              </div>
+            <div class="col-4">
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NYSE:DIS",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NASDAQ:PYPL",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NYSE:SYK",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+               <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NASDAQ:BKNG",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NASDAQ:EXPE",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
             </div>
-            
+            <div class="col-4">
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NASDAQ:ETSY",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NYSE:SHOP",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NYSE:SPOT",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NASDAQ:ZM",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NASDAQ:AAPL",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+            </div>
+            <div class="col-4">
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NASDAQ:PYPL",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NYSE:ZBH",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NASDAQ:GOOGL",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NASDAQ:TSLA",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+              {
+              "symbol": "NYSE:JNJ",
+              "width": "100%",
+              "colorTheme": "light",
+              "isTransparent": false,
+              "locale": "en"
+              }
+              </script>
+            </div>
           </div>
-          
         </div>
       </div>
-      <!-- TradingView Widget END -->
-    </body>
-  </html>
-
+    </div>
+    <!-- TradingView Widget END -->
+  </body>
+</html>
