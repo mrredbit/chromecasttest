@@ -4,8 +4,7 @@
       src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js">
   </script>
 </head>
-<body style="color: white">
-  <div id="message"></div>
+<body style="backgroud-color: white">
   <script>
     const context = cast.framework.CastReceiverContext.getInstance();
     context.addCustomMessageListener('urn:x-cast:ch.cimnine.cromecast-test.text', function (customEvent) {
