@@ -3,6 +3,25 @@
   <script type="text/javascript"
       src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js">
   </script>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <style type="text/css" media="screen">
+    .no-gutters {
+      margin-right: 0;
+      margin-left: 0;
+
+      > .col,
+      > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }  
+  </style>
 </head>
 <body style="backgroud-color: white">
   <script>
@@ -14,61 +33,106 @@
     });
     context.start();
   </script>
-  <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/indices/" rel="noopener" target="_blank"><span class="blue-text">Indices</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-  {
-  "colorTheme": "light",
-  "dateRange": "12m",
-  "showChart": true,
-  "locale": "en",
-  "largeChartUrl": "",
-  "isTransparent": false,
-  "width": "400",
-  "height": "660",
-  "plotLineColorGrowing": "rgba(33, 150, 243, 1)",
-  "plotLineColorFalling": "rgba(33, 150, 243, 1)",
-  "gridLineColor": "rgba(240, 243, 250, 1)",
-  "scaleFontColor": "rgba(120, 123, 134, 1)",
-  "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
-  "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
-  "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
-  "tabs": [
-    {
-      "title": "Indices",
-      "symbols": [
-        {
-          "s": "FOREXCOM:SPXUSD",
-          "d": "S&P 500"
-        },
-        {
-          "s": "FOREXCOM:NSXUSD",
-          "d": "Nasdaq 100"
-        },
-        {
-          "s": "FOREXCOM:DJI",
-          "d": "Dow 30"
-        },
-        {
-          "s": "INDEX:NKY",
-          "d": "Nikkei 225"
-        },
-        {
-          "s": "INDEX:DEU30",
-          "d": "DAX Index"
-        },
-        {
-          "s": "FOREXCOM:UKXGBP",
-          "d": "FTSE 100"
-        }
-      ],
-      "originalTitle": "Indices"
+<div class="container-fluid">
+  <div class="row row-cols-4">  
+    <div class="col-4">
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "NASDAQ:AAPL",
+      "width": "100%",
+      "locale": "en",
+      "dateRange": "1d",
+      "colorTheme": "light",
+      "trendLineColor": "#37a6ef",
+      "underLineColor": "#E3F2FD",
+      "isTransparent": false,
+      "autosize": true,
+      "largeChartUrl": ""
     }
-  ]
-}
-  </script>
+      </script>
+     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "NASDAQ:GOOGL",
+      "width": "100%",
+      "locale": "en",
+      "dateRange": "1d",
+      "colorTheme": "light",
+      "trendLineColor": "#37a6ef",
+      "underLineColor": "#E3F2FD",
+      "isTransparent": false,
+      "autosize": true,
+      "largeChartUrl": ""
+    }
+      </script>
+       <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "NASDAQ:AMZN",
+      "width": "100%",
+      "locale": "en",
+      "dateRange": "1d",
+      "colorTheme": "light",
+      "trendLineColor": "#37a6ef",
+      "underLineColor": "#E3F2FD",
+      "isTransparent": false,
+      "autosize": true,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+    <div class="col-4">  
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+      {
+        "symbol": "NASDAQ:AAPL",
+        "width": "100%",
+        "locale": "en",
+        "colorTheme": "light",
+        "isTransparent": false
+      }
+      </script>     
+    </div>
+    <div class="col-4 row no-gutters">
+      <div class="col-6">
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+          "symbol": "NASDAQ:AAPL",
+          "width": "100%",
+          "colorTheme": "light",
+          "isTransparent": false,
+          "locale": "en"
+        }
+        </script>
+         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+          "symbol": "NASDAQ:AAPL",
+          "width": "100%",
+          "colorTheme": "light",
+          "isTransparent": false,
+          "locale": "en"
+        }
+        </script>
+         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+          "symbol": "NASDAQ:AAPL",
+          "width": "100%",
+          "colorTheme": "light",
+          "isTransparent": false,
+          "locale": "en"
+        }
+        </script>
+      </div>
+      <div class="col-6">
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+        {
+          "symbol": "NASDAQ:AAPL",
+          "width": "100%",
+          "colorTheme": "light",
+          "isTransparent": false,
+          "locale": "en"
+        }
+        </script>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- TradingView Widget END -->
 </body>
