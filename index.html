@@ -38,6 +38,14 @@
     padding-left: 2px !important;
     padding-right: 2px !important;
     }
+    .left-panel {
+      flex: 0 0 20%;
+      max-width: 20%
+    }
+
+    .right-panel {
+      flex: 0 0 80%;
+    }
     </style>
   </head>
   <body style="backgroud-color: white">
@@ -52,7 +60,7 @@
     </script>
     <div class="container-fluid">
       <div class="row no-gutters">
-        <div class="col-3 mini-symbol">
+        <div class="col-2 left-panel">
           
           <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
           {
@@ -112,7 +120,7 @@
           </script>
           
         </div>
-        <div class="col-9 row no-gutters">
+        <div class="col-10 row no-gutters right-panel">
           <div class="row no-gutters">
             <div class="col-6 row no-gutters">
               <div class="col-12">
@@ -158,7 +166,7 @@
               <div class="col-6">
                 <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
                 {
-                "symbol": "NASDAQ:ESTY",
+                "symbol": "NASDAQ:ETSY",
                 "width": "100%",
                 "colorTheme": "light",
                 "isTransparent": false,
